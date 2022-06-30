@@ -199,6 +199,13 @@
   }
 }
 @media(max-width: 900px){
+  .header.header__fixed{
+    height: auto;
+    .header__logo img{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  }
   .contacts__list {
     max-width: 270px;
     margin-top: 40px;
@@ -312,10 +319,6 @@
   .header__info{
     margin-left: auto;
   }
-  .header{
-    position: relative;
-    height: 140px;
-  }
   .header__logo img {
     max-width: 60px;
     max-height: 60px;
@@ -336,9 +339,10 @@
     z-index: 2;
     width: 100%;
     right: 0;
-    top: 140px;
+    top: 130px;
   }
   .menu__list{
+    height: 100vh;
     display: none;
     font-size: 18px;
     line-height: 18px;
@@ -408,8 +412,8 @@
   }
   .models__item {
     margin-bottom: 40px;
-    margin-right: 18px;
-    margin-left: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
     height: 115px;
   }
   .models__item .models__item-title {
@@ -423,7 +427,7 @@
 }
 @media(max-width: 600px){
   .services__tubs {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
   }
   .question__form{
     max-width: 350px;
@@ -494,10 +498,15 @@
   }
 }
 @media(max-width: 500px){
+  .tabs .tab+.tab{
+    margin-left: 0;
+  }
   .tabs .tab {
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 12px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: rgb(87, 87, 87);
   }
   .tab-item .tab__item-inner {
     padding-top: 20px;
@@ -528,6 +537,9 @@
   }
 }
 @media(max-width: 400px){
+  .menu{
+    top: 145px;
+  }
   .map iframe {
     height: 235px;
   }
